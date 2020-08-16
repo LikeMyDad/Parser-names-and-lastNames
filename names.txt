@@ -17,7 +17,6 @@ Moore
 Martin
 Jackson
 Thompson
-White
 Lopez
 Lee
 Gonzalez
@@ -28,7 +27,6 @@ Robinson
 Walker
 Perez
 Hall
-Young
 Allen
 Sanchez
 Wright
