@@ -28,7 +28,7 @@ public class Main {
             }
         }
         if (pass.contains("_")) {
-            pass = pass.replace("_", "");
+            pass = pass.replace("_", "a");
         }
         return pass;
     }
@@ -52,7 +52,7 @@ public class Main {
 
         System.out.println("Please, write file direction of names, example: \"D:\\\\filename.txt\"");
         String catalogNames = scanner.nextLine();
-        System.out.println("Please, write file direction of last names, example: \"D:\\\\filename.txt\"");
+        System.out.println("Please, write file direction of last names, example: \"D:\\\\filename2.txt\"");
         String catalogFam = scanner.nextLine();
         System.out.println("Please, write how many lines you need: ");
         int n = scanner.nextInt(); // n - value of lines
