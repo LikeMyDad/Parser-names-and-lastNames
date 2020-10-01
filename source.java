@@ -69,6 +69,7 @@ public class Main {
                 token = scannerFileOfNames.next(); // save name for add at list of names
                 listOfNames.add(token); // add
             }
+            token = "";
             File famFile = new File(catalogFam);
             Scanner scannerFileOfFam = new Scanner(famFile);
             while (scannerFileOfFam.hasNext()) {
@@ -76,12 +77,12 @@ public class Main {
                 listOfLastNames.add(token); // add
             }
             for (int i = 0; i < n; i++) {
-                text = listOfNames.get((int) (Math.random() * listOfNames.size())) + " " + listOfLastNames.get((int) (Math.random() * listOfNames.size())) + "::" +
-                        password() + ":" + date() + "\n"; // format: Name LastName::password:date;
+////              format: Name LastName::password:date;
                 /*
                 Code get name/last name from array of names/last name use method .get ( variable.get(index) here index is random value * size of list)
                  */
-                write.write(text);
+                write.write(listOfLastNames.get((int) (Math.random() * listOfNames.size())) + " " + listOfNames.get((int) (Math.random() * listOfNames.size()))  + "::" +
+                        password() + ":" + date() + "\n");
             }
 
         } catch (IOException e) {
