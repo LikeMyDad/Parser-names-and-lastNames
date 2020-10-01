@@ -77,11 +77,7 @@ public class Main {
                 listOfLastNames.add(token); // add
             }
             for (int i = 0; i < n; i++) {
-////              format: Name LastName::password:date;
-                /*
-                Code get name/last name from array of names/last name use method .get ( variable.get(index) here index is random value * size of list)
-                 */
-                write.write(listOfLastNames.get((int) (Math.random() * listOfNames.size())) + " " + listOfNames.get((int) (Math.random() * listOfNames.size()))  + "::" +
+                write.write(listOfLastNames.get((int) (Math.random() * listOfLastNames.size())) + " " + listOfNames.get((int) (Math.random() * listOfNames.size()))  + "::" +
                         password() + ":" + date() + "\n");
             }
 
